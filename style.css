@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  crossed lines - background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+}
+  body {
+    color: rgba(68, 68, 68, 0.673);
+  }
+    header img {
+    height: 5em;
+    padding: 1em 0;    
+  }
+h1 {
+  font-size: 3em;
+}
+main p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 1.5em 0;
+  margin-bottom: 0.5em;
+}
+
+section {
+  padding: 0 2em;
+}
+
+  div {
+    display: grid;
+    gap: 2em;
+    margin-bottom: 2em;    
+  }
+
+  .kairys {
+    grid-area: kairys;
+    }
+
+  .vidurys {
+    grid-area: vidurys;
+  }
+
+  .desinys {
+    grid-area: desinys;
+  }
+
+  img {
+    border-radius: 0.5em;
+  }
+
+  @media (max-width: 520px){
+    
+    .vidurys .desinys {
+      display: none;      
+    }    
+    }
+
+    /* section img:nth-of-type(n+5) {
+      display: none; 
+    }*/
+    /* section img:nth-of-type(6) {
+      display: none;
+    }
+    section img:nth-of-type(7) {
+      display: none;
+    } */
+
+  
+
+  @media (max-width: 800px){
+
+    .desinys {
+      display: none;
+    }
+    
+    /* section img:nth-of-type(n+9) {
+      display: none; 
+    }*/
+    section {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+      "kairys vidurys";
+      } 
+    }
+
+  @media (max-width: 1250px){
+    
+    section {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+      "kairys vidurys desinys";
+    }
+  }   
+
+    
+  
